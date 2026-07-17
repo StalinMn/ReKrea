@@ -589,16 +589,17 @@ h3 {
 
 .home-hero__accent--rays {
   top: -26px;
-  right: 2%;
+  right: 35%;
   width: 58px;
   filter: brightness(0) invert(1);
   opacity: 0.94;
+  transform: rotate(180deg);
 }
 
 .home-hero__accent--leaves {
-  right: -8px;
-  bottom: 58px;
-  width: 52px;
+  right: 40px;
+  bottom: 210px;
+  width: 70px;
   opacity: 0.92;
   transform: rotate(10deg);
 }
@@ -677,7 +678,7 @@ h3 {
 .home-hero__collage {
   position: absolute;
   z-index: 5;
-  bottom: -120px;
+  bottom: -86px;
   left: -82px;
   width: min(68%, 490px);
   filter: drop-shadow(0 18px 18px rgba(42, 32, 14, 0.2));
