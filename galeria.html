@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#9ABE4D">
+  <title>Galería ReKrea | Obras con materiales reciclados</title>
+  <meta name="description" content="Explora las obras ReKrea creadas con tapas, botellas, cartón, latas y otros materiales reutilizados.">
+  <meta property="og:title" content="Galería ReKrea">
+  <meta property="og:description" content="Obras creadas a partir de materiales reciclables.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/artworks/guardian-main.webp">
+  <link rel="icon" href="assets/img/brand/logo-rekrea.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/img/artworks/guardian-main.webp" as="image" type="image/webp">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body data-page="gallery">
+  <div data-site-header></div>
+
+  <main class="gallery-main" id="contenido">
+    <div class="container">
+      <header class="gallery-hero">
+        <h1>Galería <span class="brand-stroke">ReKrea</span></h1>
+        <p>Explora las obras creadas a partir de materiales reciclables.</p>
+        <div class="gallery-filters" aria-labelledby="filters-label">
+          <span class="gallery-filters__label" id="filters-label">Filtros</span>
+          <div class="gallery-filters__buttons" role="group" aria-label="Filtrar obras por categoría">
+            <button class="filter-button is-active" type="button" data-gallery-filter="all" aria-pressed="true">Todas las obras</button>
+            <button class="filter-button" type="button" data-gallery-filter="murales" aria-pressed="false">Murales</button>
+            <button class="filter-button" type="button" data-gallery-filter="esculturas" aria-pressed="false">Esculturas</button>
+            <button class="filter-button" type="button" data-gallery-filter="tapas" aria-pressed="false">Obras con tapas</button>
+            <button class="filter-button" type="button" data-gallery-filter="botellas" aria-pressed="false">Obras con botellas</button>
+          </div>
+          <p class="gallery-status" data-gallery-status aria-live="polite">4 obras visibles</p>
+        </div>
+      </header>
+
+      <section class="gallery-grid" data-gallery-grid aria-label="Obras ReKrea"></section>
+    </div>
+  </main>
+
+  <div data-site-footer></div>
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/components.js" defer></script>
+  <script src="assets/js/gallery.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

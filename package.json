@@ -1,0 +1,16 @@
+{
+  "name": "rekrea-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sitio web multipágina de la iniciativa ReKrea",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "node scripts/build.mjs",
+    "test": "node tests/check-site.mjs",
+    "serve": "node tests/serve.mjs"
+  },
+  "devDependencies": {
+    "vite": "6.1.0"
+  }
+}
