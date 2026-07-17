@@ -677,7 +677,7 @@ h3 {
 .home-hero__collage {
   position: absolute;
   z-index: 5;
-  bottom: -50px;
+  bottom: -120px;
   left: -82px;
   width: min(68%, 490px);
   filter: drop-shadow(0 18px 18px rgba(42, 32, 14, 0.2));
