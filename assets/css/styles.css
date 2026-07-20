@@ -1975,3 +1975,117 @@ h3 {
     transform: none;
   }
 }
+/* =========================================
+   REDES SOCIALES FLOTANTES
+   ========================================= */
+
+.floating-socials {
+  position: fixed;
+  top: 50%;
+  left: 24px;
+  z-index: 999;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  /*
+    Estado inicial:
+    fuera de la pantalla hacia la izquierda
+  */
+  transform: translate(-140%, -50%);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition:
+    transform 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.45s ease,
+    visibility 0.45s ease;
+}
+
+/* Aparece al cargar la página */
+.floating-socials.is-visible {
+  transform: translate(0, -50%);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* Cada botón social */
+.floating-social {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  box-shadow:
+    0 8px 18px rgba(26, 31, 15, 0.22),
+    0 3px 6px rgba(26, 31, 15, 0.14);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* Imágenes de los iconos */
+.floating-social img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+/* Movimiento al pasar el cursor */
+.floating-social:hover {
+  transform: translateX(6px) scale(1.08);
+
+  box-shadow:
+    0 12px 25px rgba(26, 31, 15, 0.28),
+    0 4px 8px rgba(26, 31, 15, 0.17);
+}
+
+/* Cuando aparece el footer */
+.floating-socials.is-hidden {
+  transform: translate(-140%, -50%);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Tabletas */
+@media (max-width: 900px) {
+  .floating-socials {
+    left: 14px;
+    gap: 9px;
+  }
+
+  .floating-social {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+  .floating-socials {
+    left: 8px;
+    gap: 8px;
+  }
+
+  .floating-social {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+/* Reduce animaciones si el usuario lo tiene configurado */
+@media (prefers-reduced-motion: reduce) {
+  .floating-socials,
+  .floating-social {
+    transition: none;
+  }
+}

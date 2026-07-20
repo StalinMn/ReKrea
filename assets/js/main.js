@@ -207,3 +207,60 @@
     initHorizontalCarousel
   });
 })();
+/* =========================================
+   REDES SOCIALES FLOTANTES
+   ========================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+  const floatingSocials = document.querySelector(".floating-socials");
+  const footer = document.querySelector("footer, .site-footer");
+
+  /*
+    En Contáctanos no existe .floating-socials,
+    por eso el código termina sin generar errores.
+  */
+  if (!floatingSocials) {
+    return;
+  }
+
+  /*
+    Pequeño retraso para que se vea la transición
+    entrando desde el lado izquierdo.
+  */
+  window.setTimeout(() => {
+    floatingSocials.classList.add("is-visible");
+  }, 180);
+
+  /*
+    Si la página no tiene footer, los iconos
+    permanecen visibles normalmente.
+  */
+  if (!footer) {
+    return;
+  }
+
+  const footerObserver = new IntersectionObserver(
+    (entries) => {
+      const footerEntry = entries[0];
+
+      if (footerEntry.isIntersecting) {
+        /*
+          El footer comenzó a aparecer:
+          desliza los iconos hacia la izquierda.
+        */
+        floatingSocials.classList.add("is-hidden");
+      } else {
+        /*
+          El usuario se alejó del footer:
+          los iconos vuelven a aparecer.
+        */
+        floatingSocials.classList.remove("is-hidden");
+      }
+    },
+    {
+      threshold: 0.05
+    }
+  );
+
+  footerObserver.observe(footer);
+});
