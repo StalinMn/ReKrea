@@ -69,6 +69,16 @@
           </section>
         </div>
         <div class="container site-footer__legal">
+          <p>
+      <strong>Desarrollado por:</strong><br>
+      David Ismael Guacollante Caguana<br>
+      Erika Belén Moreira Sarango
+    </p>
+
+    <p>
+      <strong>Docente responsable:</strong><br>
+      Mgs. Elvis Ruiz Naranjo
+    </p>
           <p>Las obras, datos y convocatorias forman parte de la plataforma ReKrea para promover reciclaje creativo, arte urbano y participación comunitaria.</p>
           <p>ReKrea © 2026</p>
         </div>
