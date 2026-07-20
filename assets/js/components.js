@@ -68,8 +68,17 @@
             ${socialLinks()}
           </section>
         </div>
-        <div class="container site-footer__legal">
-          <p>
+<div class="container site-footer__legal">
+
+  <p>
+    Las obras, datos y convocatorias forman parte de la plataforma ReKrea
+    para promover el reciclaje creativo, el arte urbano y la participación comunitaria.
+  </p>
+
+  <div class="site-footer__credits">
+    <p class="site-footer__credits-title"><strong>Créditos del proyecto</strong></p>
+
+    <p>
       <strong>Desarrollado por:</strong><br>
       David Ismael Guacollante Caguana<br>
       Erika Belén Moreira Sarango
@@ -79,9 +88,13 @@
       <strong>Docente responsable:</strong><br>
       Mgs. Elvis Ruiz Naranjo
     </p>
-          <p>Las obras, datos y convocatorias forman parte de la plataforma ReKrea para promover reciclaje creativo, arte urbano y participación comunitaria.</p>
-          <p>ReKrea © 2026</p>
-        </div>
+  </div>
+
+  <p class="site-footer__copyright">
+    ReKrea © 2026. Todos los derechos reservados.
+  </p>
+
+</div>
       </footer>`;
   }
 
