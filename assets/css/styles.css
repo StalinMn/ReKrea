@@ -2120,7 +2120,7 @@ h3 {
 .did-you-know__text {
   max-width: 1040px;
   margin: 0 auto;
-  color: #30391b;
+  color: #510c4c;
   font-family: "Montserrat", sans-serif;
   font-size: clamp(1rem, 1.35vw, 1.25rem);
   font-weight: 400;
@@ -2136,7 +2136,7 @@ h3 {
 }
 
 .did-you-know__text strong {
-  color: #30391b;
+  color: #510c4c;
   font-weight: 750;
 }
 
