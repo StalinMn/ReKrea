@@ -2089,3 +2089,90 @@ h3 {
     transition: none;
   }
 }
+
+/* =========================================
+   SECCIÓN ¿SABÍAS QUE...?
+   ========================================= */
+
+.did-you-know {
+  position: relative;
+  padding: 18px 24px 72px;
+  background: #f8f7f1;
+  overflow: hidden;
+}
+
+.did-you-know__content {
+  width: min(100%, 1120px);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.did-you-know__title {
+  margin: 0 0 32px;
+  color: #7f3248;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(2.5rem, 5vw, 4.4rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.did-you-know__text {
+  max-width: 1040px;
+  margin: 0 auto;
+  color: #30391b;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1rem, 1.35vw, 1.25rem);
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+.did-you-know__text p {
+  margin: 0 auto 24px;
+}
+
+.did-you-know__text p:last-child {
+  margin-bottom: 0;
+}
+
+.did-you-know__text strong {
+  color: #30391b;
+  font-weight: 750;
+}
+
+/* Tabletas */
+@media (max-width: 900px) {
+  .did-you-know {
+    padding: 28px 28px 60px;
+  }
+
+  .did-you-know__title {
+    margin-bottom: 26px;
+  }
+
+  .did-you-know__text {
+    max-width: 760px;
+    line-height: 1.55;
+  }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+  .did-you-know {
+    padding: 30px 20px 52px;
+  }
+
+  .did-you-know__title {
+    margin-bottom: 22px;
+    font-size: 2.5rem;
+  }
+
+  .did-you-know__text {
+    font-size: 0.98rem;
+    line-height: 1.6;
+  }
+
+  .did-you-know__text p {
+    margin-bottom: 20px;
+  }
+}
